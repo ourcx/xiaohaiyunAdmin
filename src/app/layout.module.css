@@ -1,0 +1,82 @@
+/* Header.module.css */
+.header {
+  background-color: white !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoImage {
+  border-radius: 6px;
+}
+
+.logoText {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  color: #27ba9b;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.menu {
+  background: transparent !important;
+  border-bottom: none !important;
+  flex: 1;
+  min-width: 0;
+  justify-content: flex-end;
+}
+
+.menu :global(.ant-menu-item) {
+  border-radius: 6px;
+  margin: 0 4px;
+  transition: all 0.3s ease;
+  color: black !important;
+}
+
+.menu :global(.ant-menu-item:hover) {
+  background-color: rgba(39, 186, 155, 0.1) !important;
+  color: #27ba9b !important;
+}
+
+.menu :global(.ant-menu-item-selected) {
+  background-color: #27ba9b !important;
+  color: white !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .header {
+    padding: 0 12px;
+  }
+  
+  .logoText {
+    font-size: 16px;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  /* 可以添加一个汉堡菜单按钮用于移动端 */
+  .mobileMenuButton {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #27ba9b;
+  }
+}
