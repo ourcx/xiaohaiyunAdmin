@@ -1,0 +1,19 @@
+.xh_Allfile{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.xh_Allfile_header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+.xh_Allfile_select{
+  width: 100px !important;
+}
+

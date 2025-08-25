@@ -34,50 +34,50 @@ const items = [
     // icon: React.createElement(icon),
     label: `文件管理`,
     children: [
-      { key: '1', label: '所有文件' },
-      { key: '2', label: '回收站' },
-      { key: '3', label: '增添文件' },
+      { key: '/file', label: '所有文件' },
+      { key: '/file/2', label: '回收站' },
+      { key: '/file/3', label: '增添文件' },
     ]
   },
   {
-    key: `share`,
+    key: `/share`,
     // icon: React.createElement(icon),
     label: `文件分享`,
     children: [
-      { key: '4', label: '分享文件' },
-      { key: '5', label: '分享链接' },
-      { key: '6', label: '全局分享设置' },
+      { key: '/share/1', label: '分享文件' },
+      { key: '/share/2', label: '分享链接' },
+      { key: '/share/3', label: '全局分享设置' },
     ]
   },
   {
-    key: `setting`,
+    key: `/setting`,
     // icon: React.createElement(icon),
     label: `系统设置`,
     children: [
-      { key: '7', label: '基本设置' },
-      { key: '8', label: '安全设置' },
-      { key: '9', label: '通知设置' },
+      { key: '/setting/1', label: '基本设置' },
+      { key: '/setting/2', label: '安全设置' },
+      { key: '/setting/3', label: '通知设置' },
     ]
   },
   {
-    key: `user`,
+    key: `/user`,
     // icon: React.createElement(icon),
     label: `用户管理`,
     children: [
-      { key: '10', label: '用户列表' },
-      { key: '11', label: '封禁用户' },
-      { key: '12', label: '用户会员' },
-      { key: '13', label: '用户隐私' },
+      { key: '/user/1', label: '用户列表' },
+      { key: '/user/2', label: '封禁用户' },
+      { key: '/user/3', label: '用户会员' },
+      { key: '/user/4', label: '用户隐私' },
     ]
   },
   {
-    key: `logs`,
+    key: `/log`,
     // icon: React.createElement(icon),
     label: `系统日志`,
     children: [
-      { key: '13', label: '操作日志' },
-      { key: '14', label: '登录日志' },
-      { key: '15', label: '错误日志' },
+      { key: '/log/1', label: '操作日志' },
+      { key: '/log/2', label: '登录日志' },
+      { key: '/log/3', label: '错误日志' },
     ]
   },
 ]
@@ -137,7 +137,7 @@ export default function RootLayout({
                 </Sider>
                 <Layout style={{ padding: '0 24px 24px' }}>
                   <Breadcrumb
-                    items={[{ title: 'Home' }, { title: 'List' }, { title: 'App' }]}
+                    items={[{ title: 'Home' }, { title: 'List' }, { title: '网盘系统' }]}
                     style={{ margin: '16px 0' }}
                   />
                   <Content
