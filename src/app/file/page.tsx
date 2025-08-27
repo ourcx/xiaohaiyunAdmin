@@ -1,5 +1,5 @@
 'use client';
-import { Button, Col, Form, Input, Row, Select, Space, Table, TablePaginationConfig, TableProps, Tag } from "antd";
+import { Button, Col, Form, Input, Row, Select, Space, Table, TablePaginationConfig, TableProps, Tag, Tooltip } from "antd";
 import styles from "./page.module.css";
 import Container from "@/components/container"
 import { useState } from "react";
@@ -52,6 +52,10 @@ export default function LoginPage() {
       title: '位置',
       dataIndex: 'address',
       key: 'address',
+      ellipsis: true,
+      render: (text: string) => {
+        return <Tooltip title={text} placement="topLeft">{text}</Tooltip>
+      }
     },
     {
       title: '类型',
@@ -235,15 +239,16 @@ export default function LoginPage() {
       tags: ['脚本']
     }
   ];
+  //这里添加自己的后台数据，使用useEffect
 
- const onTableChange = (pagination: TablePaginationConfig) => {
-  setPagination({
-    current: pagination.current || 1, // 提供默认值
-    pageSize: pagination.pageSize || 10,
-    showSizeChanger: pagination.showSizeChanger as boolean,
-    total: pagination.total || 0,
-  });
-}
+  const onTableChange = (pagination: TablePaginationConfig) => {
+    setPagination({
+      current: pagination.current || 1, // 提供默认值
+      pageSize: pagination.pageSize || 10,
+      showSizeChanger: pagination.showSizeChanger as boolean,
+      total: pagination.total || 0,
+    });
+  }
   return (
     <Container>
       <div className={styles.xh_Allfile}>

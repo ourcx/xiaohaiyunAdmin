@@ -36,7 +36,7 @@ const items = [
     children: [
       { key: '/file', label: '所有文件' },
       { key: '/file/2', label: '回收站' },
-      { key: '/file/3', label: '增添文件' },
+      { key: '/file/addFile', label: '增添文件' },
     ]
   },
   {
