@@ -1,0 +1,49 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgb(162, 214, 209) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgb(150, 198, 194) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: center center;
+  -webkit-mask-image: radial-gradient(
+    ellipse 50% 50% at 50% 50%,
+    #a9a7a7 80%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 50% 50% at 50% 50%,
+    #a2a1a1 80%,
+    transparent 100%
+  );
+  //重点学习，网格背景
+}
+
+.loginCard {
+  width: 100%;
+  max-width: 400px;
+  /* 添加平滑的阴影效果以突出卡片 */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+}
+
+.forgotPassword {
+  float: right;
+}
+
+.loginButton {
+  font-weight: 500;
+  height: 44px; /* 增大按钮高度，方便点击 */
+}
+
+.registerPrompt {
+  text-align: center;
+  color: #888;
+}
