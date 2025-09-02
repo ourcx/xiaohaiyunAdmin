@@ -28,6 +28,14 @@
   gap: 32px;
   grid-row-start: 2;
   width: 100vw;
+    background-image: linear-gradient(
+      to right,
+      rgb(162, 214, 209) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgb(150, 198, 194) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: center center;
 }
 
 .main ol {
@@ -171,6 +179,7 @@ a.secondary {
   width: 100%;
   text-align: center;
   font-size: 20;
+  
 }
 
 .time{
@@ -181,6 +190,7 @@ a.secondary {
 .body img{
   width: 100%;
   height: 400px;
+
 }
 
 /* page.module.css */
@@ -209,6 +219,7 @@ a.secondary {
   height: 300px;
   object-fit: contain;
   margin-bottom: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) ;
 }
 
 .title {
@@ -216,7 +227,7 @@ a.secondary {
   font-weight: 800;
   margin: 0;
   /* 文字漸變效果 */
-  background: linear-gradient(90deg, #a1c4fd, #c2e9fb);
+  background: linear-gradient(90deg, #a1ebfd, #46ccca);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -225,7 +236,7 @@ a.secondary {
 
 .description {
   font-size: 1.1rem;
-  color: #c5c5c5;
+  color: #858585;
   max-width: 600px;
   line-height: 1.6;
   margin: 0;
@@ -236,7 +247,7 @@ a.secondary {
 }
 
 .countdownWrapper :global(.ant-statistic-title) {
-  color: #a9a9a9 !important;
+  color: #858585 !important;
   font-size: 1rem !important;
   margin-bottom: 10px !important;
 }

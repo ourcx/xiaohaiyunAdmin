@@ -44,8 +44,8 @@ const items = [
     // icon: React.createElement(icon),
     label: `文件分享`,
     children: [
-      { key: '/share/1', label: '分享文件' },
-      { key: '/share/2', label: '分享链接' },
+      { key: '/share', label: '分享文件' },
+      { key: '/share/links', label: '分享链接' },
       { key: '/share/3', label: '全局分享设置' },
     ]
   },

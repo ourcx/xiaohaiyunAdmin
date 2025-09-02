@@ -1,0 +1,19 @@
+.progress{
+    width: 100%;
+}
+.progress_bar{
+    width: 100%;
+    text-align: center;
+    height: 10px;
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
