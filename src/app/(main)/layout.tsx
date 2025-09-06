@@ -56,7 +56,7 @@ const items = [
     children: [
       { key: '/setting/base', label: '基本设置' },
       { key: '/setting/2', label: '安全设置' },
-      { key: '/setting/3', label: '通知设置' },
+      { key: '/setting/tip', label: '通知设置' },
     ]
   },
   {
