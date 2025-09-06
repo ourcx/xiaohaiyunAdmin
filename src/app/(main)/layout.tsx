@@ -46,7 +46,7 @@ const items = [
     children: [
       { key: '/share', label: '分享文件' },
       { key: '/share/links', label: '分享链接' },
-      { key: '/share/3', label: '全局分享设置' },
+      { key: '/share/setting', label: '全局分享设置' },
     ]
   },
   {
@@ -54,7 +54,7 @@ const items = [
     // icon: React.createElement(icon),
     label: `系统设置`,
     children: [
-      { key: '/setting/1', label: '基本设置' },
+      { key: '/setting/base', label: '基本设置' },
       { key: '/setting/2', label: '安全设置' },
       { key: '/setting/3', label: '通知设置' },
     ]

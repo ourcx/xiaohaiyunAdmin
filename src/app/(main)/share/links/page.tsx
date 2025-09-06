@@ -84,6 +84,7 @@ export default function LinksPage() {
                     <div className={style.progress_bar}>全局链接储存量</div>
                     <Progress percent={99.9} strokeColor={twoColors} />
                 </div>
+                <div>实时连接监测.....</div>
                 <div className={style.enter}>
                     <div className={style.enter_title}>链接访问人数</div>
                     <canvas ref={chartRef} width="400" height="200" />
