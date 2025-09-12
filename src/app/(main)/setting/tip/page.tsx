@@ -1,6 +1,6 @@
 'use client';
 
-import Container from "@/components/container";
+
 import { Button, Input, Space, message } from "antd";
 import styles from "./page.module.css";
 

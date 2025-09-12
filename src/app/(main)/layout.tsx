@@ -55,7 +55,7 @@ const items = [
     label: `系统设置`,
     children: [
       { key: '/setting/base', label: '基本设置' },
-      { key: '/setting/2', label: '安全设置' },
+      { key: '/setting/safety', label: '安全设置' },
       { key: '/setting/tip', label: '通知设置' },
     ]
   },
@@ -64,7 +64,7 @@ const items = [
     // icon: React.createElement(icon),
     label: `用户管理`,
     children: [
-      { key: '/user/1', label: '用户列表' },
+      { key: '/user', label: '用户列表' },
       { key: '/user/2', label: '封禁用户' },
       { key: '/user/3', label: '用户会员' },
       { key: '/user/4', label: '用户隐私' },
